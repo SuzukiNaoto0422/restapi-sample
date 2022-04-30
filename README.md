@@ -6,8 +6,8 @@
 
 ## APIの概要
 
-ユーザーを管理する機能をもったAPIを作成してください。
-仕様書は下記です。
+ユーザーを管理する機能をもったAPIを作成してください。  
+仕様書は下記です。  
 https://raisetech-for-student.github.io/restapi-sample/
 
 ### データベース定義
