@@ -49,7 +49,7 @@ FORMAT: 1A
 idに指定したユーザーの情報を取得します。
 
 + Parameters
-  + id: 1 (number) - An unique identifier of the user.
+  + id: 1 (number) - ユーザーのID
 
 
 + Response 200 (application/json)
@@ -92,7 +92,7 @@ idに指定したユーザーの情報を更新します。
 + birthdate (string, required) - 生年月日。yyyy-MM-dd形式。未来日付は不可。
 
 + Parameters
-  + id: 1 (number) - An unique identifier of the user.
+  + id: 1 (number) - ユーザーのID
 
 + Request (application/json)
         {
@@ -109,7 +109,6 @@ idに指定したユーザーの情報を更新します。
         {
           "message": "resource not found"
         }
-
 
 ## DELETE /users/{id}
 
