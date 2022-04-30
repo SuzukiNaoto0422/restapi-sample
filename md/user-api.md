@@ -61,7 +61,7 @@ idに指定したユーザーの情報を取得します。
 
 + Response 404 (application/json)
         {
-          "message": "Resource Not Found"
+          "message": "resource not found"
         }
 
 ## GET /users
@@ -69,8 +69,8 @@ idに指定したユーザーの情報を取得します。
 ユーザーを検索します。
 
 + Parameters
-  + name (string, mandatory) - ユーザー名
-  + birthdate (string, optional) - yyyy-MM-dd形式。未来日付は不可。
+  + name (string, mandatory) - ユーザー名。前方一致で検索。
+  + birthdate (string, optional) - yyyy-MM-dd形式。完全一致で検索。
 
 + Response 200 (application/json)
         [
@@ -107,7 +107,7 @@ idに指定したユーザーの情報を更新します。
 
 + Response 404 (application/json)
         {
-          "message": "Resource Not Found"
+          "message": "resource not found"
         }
 
 
@@ -124,7 +124,7 @@ idに指定したユーザーの情報を更新します。
 
 + Response 404 (application/json)
         {
-          "message": "Resource Not Found"
+          "message": "resource not found"
         }
 
 # Group Common
@@ -133,7 +133,7 @@ idに指定したユーザーの情報を更新します。
 ステータスコード: `404`
 ```json
 {
-  "message": "Resource Not Found"
+  "message": "resource not found"
 }
 ```
 
@@ -141,6 +141,6 @@ idに指定したユーザーの情報を更新します。
 ステータスコード: `500`
 ```json
 {
-  "message": "System Error"
+  "message": "system error"
 }
 ```
