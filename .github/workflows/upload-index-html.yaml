@@ -4,9 +4,8 @@ name: Upload Index.html
 
 on:
   pull_request:
-    branches: [ main ]
-    paths: 
-      - "./md/user-api.md
+    paths:
+      - 'md/user-api.md'
 
 jobs:
   build:
